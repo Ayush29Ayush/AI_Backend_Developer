@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 load_dotenv()
 client = OpenAI()
 
+#! Chain of Thought Prompt Engineering
+# For complex reasoning, ask the model to think step-by-step:
+
 response = client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
